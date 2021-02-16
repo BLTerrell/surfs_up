@@ -14,7 +14,7 @@ engine = create_engine("sqlite:///hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Measurement = Base.classes.measurement
-Staion = Base.classes.station
+Station = Base.classes.station
 session = Session(engine)
 
 
@@ -38,7 +38,8 @@ def welcome():
 @app.route("/api/v1.0/precipitation")
 def precipitation():
     prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
-    precipitation = session.query(Measurement.date, Measurement.prcp).filter(
+    precipitation = session.query(Measurement.date, Measurement.prcp)\
+        .filter(
         Measurement.date >= prev_year).all()
     precip = {date: prcp for date, prcp in precipitation}
 
@@ -46,5 +47,21 @@ def precipitation():
 
 
 @app.route("/api/v1.0/stations")
-# @app.route("/api/v1.0/tobs")
+def stations():
+    results = session.query(Station.station).all()
+    stations = list(np.ravel(results))
+
+    return jsonify(stations=stations)
+
+
+@app.route("/api/v1.0/tobs")
+def temp_monthly():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    results = session.query(Measurement.tobs)\
+        .filter(
+        Measurement.station == 'USC00519281').filter(Measurement.date >= prev_year).all()
+    temps = list(np.ravel(results))
+
+    return jsonify(temps=temps)
+
 # @app.route("api/v1.0/temp/start/end")
