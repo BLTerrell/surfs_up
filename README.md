@@ -46,4 +46,4 @@ From our results we see that the temperatures in the months of June and December
 
 - A question we need to ask ourselves is, "Are June and December the best months to look at to represent peak warm weather and peak cold weather?" From the thrid query, the answer appears to be no. From our dataset, January (not December) has the lowest average temperature and the months of July, August, September, and October all have average temperatures higher than June. 
 
-- Another variable we could research mor indepth is where on the island would our surf and ice cream shop thrive. Are there sides of the island that have more rain or better surfing waves? Can we use the latitudes and longitudes of the stations to determine the precipitation part of this question?
+- Another variable we could research more indepth is where on the island would our surf and ice cream shop thrive. Are there sides of the island that have more rain or better surfing spots? Can we use the latitudes and longitudes of the stations to determine the precipitation part of this question?
