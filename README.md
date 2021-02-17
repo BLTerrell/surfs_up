@@ -15,6 +15,8 @@ Our objective is to analyze weather trends for the months of June and Decemeber 
 
 ### Data Generated
 
+- [june_precip.png](Resources/june_precip.png)
+- [dec_precip.png](Resources/dec_precip.png)
 - [june_temps.png](Resources/june_temps.png) (displayed below on the left)
 - [dec_temps.png](Resources/dec_temps.png) (displayed below on the right)
 
@@ -30,13 +32,18 @@ Our objective is to analyze weather trends for the months of June and Decemeber 
 
 ## Summary
 
-### Observations
+### Conclusion
+
+From our results we see that the temperatures in the months of June and December are not far off from each other with average temperatures falling between 71-75°F. Noticeable trends were that in December 75% of all temperature records were above 69°F and June's lowest recorded temperature was 64°F. These sound like promising statistics in order to open a year-round surf and ice cream shop.
+
+### Queries
 ###### Queries that are referenced in this section can be found in [additional_queries.ipynb](Resources/additional_queries.ipynb)
 
-From our results we see that the temperatures in the months of June and December are not far off from each other with average temperatures falling between 71-75°F. Noticeable trends were that in December 75% of all temperature records were above 69°F and June's lowest recorded temperature was 64°F. These sound like promising statistics to run a surf and ice cream shop.
+1. The first additional query would retrieve the precipitation data for June from `Measurement.prcp`. After executing it we would see that 59% of June records had precipitation and 75% of the days with precipitation recorded less than 0.24 inches of rain.
+2. The second query would pull the same data, but for the month of December. After executing it we would see that 64% of December records had precipitation and 75% of the days with precipitation recorded less than 0.33 inches of rain.
+ 
+### Next Steps
 
-A final thought is to ask ourselves the question, "Are June and December the best months to look at to represent peak warm weather and peak cold weather?" From the thrid query, the answer appears to be no. From our dataset,January has the lowest average temperature and the months of July, August, September, and October all have average temperatures higher than June. 
+- A question we need to ask ourselves is, "Are June and December the best months to look at to represent peak warm weather and peak cold weather?" From the thrid query, the answer appears to be no. From our dataset, January (not December) has the lowest average temperature and the months of July, August, September, and October all have average temperatures higher than June. 
 
-There is a high-level summary of the results and there are two additional queries to perform to gather more weather data for June and December. (5 pt)
-
-Look at precipitation in these months
+- Another variable we could research mor indepth is where on the island would our surf and ice cream shop thrive. Are there sides of the island that have more rain or better surfing waves? Can we use the latitudes and longitudes of the stations to determine the precipitation part of this question?
