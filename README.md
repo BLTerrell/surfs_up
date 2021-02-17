@@ -1,11 +1,10 @@
 # Surfs Up - Hawaii Weather Analysis Using SQLite
 
-
 ## Overview of Project
 
 ### Purpose
 
-The purpose of the analysis is well defined. (3 pt)
+Our objective is to analyze weather trends for the months of June and Decemeber in order to help determine the viability of opening a surf and ice cream business in Oahu.
 
 ### Resources
 - Data: [hawaii.sqlite](hawaii.sqlite)
@@ -19,8 +18,7 @@ The purpose of the analysis is well defined. (3 pt)
 - [june_temps.png](Resources/june_temps.png) (displayed below on the left)
 - [dec_temps.png](Resources/dec_temps.png) (displayed below on the right)
 
-<img src='Resources/june_temps.png'>
-<img src='Resources/dec_temps.png'>
+<img src='Resources/june_temps.png'> <img src='Resources/dec_temps.png'>
 
 ### Results
 - Three key differences between June's weather and December's weather:
@@ -35,7 +33,7 @@ The purpose of the analysis is well defined. (3 pt)
 ### Observations
 ###### Queries that are referenced in this section can be found in [additional_queries.ipynb](Resources/additional_queries.ipynb)
 
-
+From our results we see that the temperatures in the months of June and December are not far off from each other with average temperatures falling between 71-75°F. Noticeable trends were that in December 75% of all temperature records were above 69°F and June's lowest recorded temperature was 64°F. These sound like promising statistics to run a surf and ice cream shop.
 
 A final thought is to ask ourselves the question, "Are June and December the best months to look at to represent peak warm weather and peak cold weather?" From the thrid query, the answer appears to be no. From our dataset,January has the lowest average temperature and the months of July, August, September, and October all have average temperatures higher than June. 
 
